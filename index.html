@@ -47,7 +47,7 @@
       </nav>
 
       <div
-        class="hero-section bg-[url(./assets/hero-bg.png)] bg-center py-10 md:py-[101px]"
+        class="hero-section bg-[url(./assets/hero-bg.png)] md:bg-center bg-cover bg-top py-10 md:py-[101px]"
       >
         <div
           class="hero-content max-w-[400px] md:max-w-[550px] mx-auto flex flex-col justify-center text-center gap-6 md:gap-10"
@@ -86,7 +86,7 @@
               <p>Listen on Spotify</p>
             </button>
             <button
-              class="text-[#00FF88] flex justify-center items-center gap-2 px-5 py-3 rounded-full border border-[#00FF88]"
+              class="text-[#00FF88] flex justify-center items-center gap-2 px-5 py-3 rounded-full border-2 border-[#00FF88]"
             >
               <img class="w-5 h-5" src="./assets/message.png" alt="" />
               <p>Subscribe</p>
@@ -95,5 +95,57 @@
         </div>
       </div>
     </header>
+    <main>
+      <section
+        class="about-section bg-[#1A0B2E] px-5 py-10 flex flex-col gap-10 md:gap-20 md:px-50 md:pb-30 md:pt-12.5"
+      >
+        <div class="text-white text-center">
+          <h3 class="font-bold text-[2rem] md:text-5xl mb-4">
+            About the Podcast
+          </h3>
+          <p class="leading-5 opacity-80">
+            TechWave is your go-to podcast for staying ahead in the fast-paced
+            world of technology. <br class="hidden md:flex" />
+            We break down complex topics into digestible insights, explore
+            productivity strategies that actually work,
+            <br class="hidden md:flex" />
+            and share stories of personal growth from industry leaders. <br />
+            <br />
+            Join thousands of young professionals and tech enthusiasts who start
+            their day with TechWave.
+          </p>
+        </div>
+        <div><hr class="text-white opacity-[0.25]" /></div>
+
+        <div
+          class="about-section-card grid grid-cols-2 grid-rows-2 gap-10 md:grid-cols-4 md:grid-rows-1"
+        >
+          <div class="card text-center">
+            <h1 class="text-[2.5rem] font-extrabold text-[#00FF88] mb-4">
+              150K+
+            </h1>
+            <p class="text-white opacity-80">Monthly Listeners</p>
+          </div>
+          <div class="card text-center">
+            <h1 class="text-[2.5rem] font-extrabold text-[#00FF88] mb-4">
+              200+
+            </h1>
+            <p class="text-white opacity-80">Episodes Published</p>
+          </div>
+          <div class="card text-center">
+            <h1 class="text-[2.5rem] font-extrabold text-[#00FF88] mb-4">
+              4.9★
+            </h1>
+            <p class="text-white opacity-80">Average Rating</p>
+          </div>
+          <div class="card text-center">
+            <h1 class="text-[2.5rem] font-extrabold text-[#00FF88] mb-4">
+              50+
+            </h1>
+            <p class="text-white opacity-80">Industry Experts</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
