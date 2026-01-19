@@ -16,10 +16,10 @@
   </head>
   <body class="font-inter">
     <header>
-      <nav
-        class="bg-[#1A0B2E] py-[18px] px-5 border-b border-[rgba(65, 37, 103, 1)]"
-      >
-        <div class="nav-content flex justify-around items-center">
+      <nav class="bg-[#1A0B2E] py-[18px] px-5 border-b border-purple-900">
+        <div
+          class="nav-content flex justify-between sm:justify-around items-center"
+        >
           <div class="nav-logo text-[2rem] font-bold">
             <span class="text-white">Tech</span
             ><span
@@ -28,37 +28,69 @@
             >
           </div>
           <ul
-            class="nav-links flex justify-between items-center gap-8 font-medium text-white"
+            class="hidden nav-links md:flex justify-between items-center gap-8 font-medium text-white"
           >
             <li><a href="">About</a></li>
             <li><a href="">Episodes</a></li>
             <li><a href="">Host</a></li>
           </ul>
           <button
-            class="nav-btn flex justify-center items-center px-4 py-3 gap-1 font-semibold text-white bg-linear-to-tr from-[#F7E93f] via-[#FB09B4] to-[#9100F8] rounded-full animate-bounce hover:bg-linear-to-br cursor-pointer"
+            class="nav-btn hidden md:flex justify-center items-center px-4 py-3 gap-1 font-semibold text-white bg-linear-to-tr from-[#F7E93f] via-[#FB09B4] to-[#9100F8] rounded-full animate-bounce hover:bg-linear-to-br cursor-pointer"
           >
             <p>Subscribe</p>
             <i class="fa-solid fa-arrow-right"></i>
           </button>
+          <div class="md:hidden text-white">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
       </nav>
 
       <div
-        class="hero-section bg-[url(./assets/hero-bg.png)] bg-cover py-[101px]"
+        class="hero-section bg-[url(./assets/hero-bg.png)] bg-center py-10 md:py-[101px]"
       >
         <div
-          class="hero-content max-w-[550px] mx-auto flex flex-col justify-center text-center"
+          class="hero-content max-w-[400px] md:max-w-[550px] mx-auto flex flex-col justify-center text-center gap-6 md:gap-10"
         >
-          <div class="podcast-logo">
-            <img src="" alt="" />
+          <div
+            class="podcast-logo w-[200px] h-[200px] md:w-[350px] md:h-[350px] mx-auto bg-[url(./assets/hero-circle.png)] bg-cover flex justify-center items-center relative"
+          >
+            <img
+              class="w-20 h-20 md:h-fit md:w-fit"
+              src="./assets/microphone.png"
+              alt=""
+            />
+            <button
+              class="font-semibold text-[#1A0B2E] py-2 px-4 bg-[#00FF88] rounded-full absolute top-0 right-0 md:text-[1.125rem] md:top-3 md:right-6 animate-pulse"
+            >
+              NEW
+            </button>
           </div>
           <div class="hero-text">
-            <h1>TechWave</h1>
-            <p>
+            <h1
+              class="font-extrabold md:text-[3.75rem] text-[2.5rem] text-white mb-2"
+            >
+              TechWave
+            </h1>
+            <p class="text-white">
               Your daily dose of tech insights, productivity hacks, and personal
               growth
             </p>
-            <div class="hero-btns"></div>
+          </div>
+          <div class="hero-btns flex justify-center gap-2">
+            <button
+              class="text-white flex justify-center items-center gap-2 px-5 py-3 rounded-full bg-linear-to-tr from-[#F7E93f] via-[#FB09B4] to-[#9100F8]"
+            >
+              <img class="w-5 h-5" src="./assets/spotify.png" alt="" />
+
+              <p>Listen on Spotify</p>
+            </button>
+            <button
+              class="text-[#00FF88] flex justify-center items-center gap-2 px-5 py-3 rounded-full border border-[#00FF88]"
+            >
+              <img class="w-5 h-5" src="./assets/message.png" alt="" />
+              <p>Subscribe</p>
+            </button>
           </div>
         </div>
       </div>
