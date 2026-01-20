@@ -152,10 +152,10 @@
           Why Choose TechWave
         </h1>
         <div
-          class="choose-section-cards grid grid-cols-1 gap-4 md:gap-[1.875rem] md:grid-cols-3 md:grid-rows-3"
+          class="choose-section-cards grid grid-cols-1 gap-4 md:gap-[1.875rem] lg:grid-cols-3 lg:grid-rows-3"
         >
           <div
-            class="choose-card p-6 md:row-span-2 bg-[#35116565] rounded-3xl flex items-center"
+            class="choose-card p-6 lg:row-span-2 bg-[#35116565] rounded-3xl flex items-center"
           >
             <div class="flex flex-col justify-start gap-4">
               <img
@@ -174,7 +174,7 @@
             </div>
           </div>
           <div
-            class="choose-card col-span-2 p-6 bg-[#35116565] rounded-3xl flex items-center"
+            class="choose-card lg:col-span-2 p-6 bg-[#35116565] rounded-3xl flex items-center"
           >
             <div class="flex flex-col justify-start gap-4">
               <img class="w-[60px] h-[60px]" src="./assets/device.png" alt="" />
@@ -188,7 +188,7 @@
             </div>
           </div>
           <div
-            class="choose-card col-span-2 p-6 bg-[#35116565] rounded-3xl flex items-center"
+            class="choose-card lg:col-span-2 p-6 bg-[#35116565] rounded-3xl flex items-center"
           >
             <div class="flex flex-col justify-start gap-4">
               <img
@@ -205,7 +205,7 @@
             </div>
           </div>
           <div
-            class="choose-card col-span-2 p-6 bg-[#35116565] rounded-3xl flex items-center"
+            class="choose-card lg:col-span-2 p-6 bg-[#35116565] rounded-3xl flex items-center"
           >
             <div class="flex flex-col justify-start gap-4">
               <img class="w-[60px] h-[60px]" src="./assets/image.png" alt="" />
@@ -250,7 +250,7 @@
           Featured Episodes
         </h3>
         <div
-          class="featured-cards justify-center items-center flex flex-col gap-4 md:flex-row md:gap-[30px] mb-15 md:mb-30"
+          class="featured-cards justify-center items-center flex flex-col gap-4 lg:flex-row lg:gap-[30px] mb-15 lg:mb-30"
         >
           <div
             class="cards bg-[#250D44] max-w-[400px] md:max-w-[380px] rounded-3xl"
@@ -419,5 +419,42 @@
         </div>
       </section>
     </main>
+
+    <footer
+      class="md:bg-[url(./assets/footer-bg.png)] bg-[url(./assets/footer2.png)] flex flex-col gap-6 md:gap-8 bg-contain bg-center md:bg-clip-border md:bg-auto md:bg-center justify-center items-center px-5 py-10 md:p-[120px]"
+    >
+      <h2 class="text-[2.5rem] md:text-7xl font-extrabold">
+        <span class="text-white">Tech</span
+        ><span
+          class="bg-linear-to-tr from-[#F7E93f] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent"
+          >Wave</span
+        >
+      </h2>
+      <div class="flex flex-col gap-4 md:flex-row md:gap-10">
+        <div class="flex gap-4 md:gap-10">
+          <div class="flex justify-center items-center gap-2">
+            <img src="./assets/spotify.png" alt="" />
+            <p class="font-medium text-white opacity-60">Spotify</p>
+          </div>
+          <div class="flex justify-center items-center gap-2">
+            <img src="./assets/apple-podcast.png" alt="" />
+            <p class="font-medium text-white opacity-60">Apple Podcasts</p>
+          </div>
+        </div>
+        <div class="flex justify-center items-center gap-4 md:gap-10">
+          <div class="flex justify-center items-center gap-2">
+            <img src="./assets/youtube-podcast.png" alt="" />
+            <p class="font-medium text-white opacity-60">YouTube</p>
+          </div>
+          <div class="flex justify-center items-center gap-2">
+            <img src="./assets/twitter.png" alt="" />
+            <p class="font-medium text-white opacity-60">Twitter</p>
+          </div>
+        </div>
+      </div>
+      <p class="leading-6 text-white opacity-60">
+        © 2026 TechWave Podcast. All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>
